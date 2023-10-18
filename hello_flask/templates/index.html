@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+            .cube{
+               /* background-color: tomato;  */
+                width: 100px;
+                height: 100px;
+                border: 2px solid black;
+                margin: 10px auto;
+                border-radius: 20px;
+                margin: 10px;
+            }
+            .container{
+            width: 80%;
+            padding: 5px;
+            margin: 10px auto;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            }
+            h1{
+                text-align: center;
+            }
+        
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome!</h1>
+    <div class="container">
+      {% for x in range(0,times): %}
+      <div class="cube" style="background-color:{{color}}"></div>
+      {% endfor %}
+    </div>
+
+    <!-- {% if phrase == "hello" %}  
+    <p>The phrase says hello</p>
+    {% endif %} -->
+  </body>
+</html>
